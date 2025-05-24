@@ -12,25 +12,28 @@ class QuestionWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      clipBehavior: Clip.none,
-      children: [
-        ProfileCard().paddingOnly(left: 20),
-        Positioned(
-          top: 30,
-          left: 70.w,
-          child: SizedBox(
-            width: 0.65.sw,
-            child: CustomWrapText(
-              text: "What is your favorite time of the day?",
-              fontWeight: FontWeight.w700,
-              fontSize: 20,
-              color: kWhite,
-              textAlign: TextAlign.start,
+    return SizedBox(
+      height: 76.h,
+      child: Stack(
+        clipBehavior: Clip.none,
+        children: [
+          ProfileCard().paddingOnly(left: 20),
+          Positioned(
+            top: 30,
+            left: 70.w,
+            child: SizedBox(
+              width: 0.65.sw,
+              child: CustomWrapText(
+                text: "What is your favorite time of the day?",
+                fontWeight: FontWeight.w700,
+                fontSize: 20,
+                color: kWhite,
+                textAlign: TextAlign.start,
+              ),
             ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }

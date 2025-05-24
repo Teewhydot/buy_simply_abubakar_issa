@@ -2,7 +2,24 @@
 class Assets {
   Assets._();
 
+  static const String fontsProximaNovaProximanovaBlack =
+      'assets/fonts/proxima_nova/proximanova_black.ttf';
+  static const String imagesFeBg = 'assets/images/fe_bg.jpg';
   static const String imagesPerson = 'assets/images/person.png';
+  static const String proximaNovaProximanovaBlack =
+      'assets/fonts/proxima_nova/proximanova_black.otf';
+  static const String proximaNovaProximanovaBlackit =
+      'assets/fonts/proxima_nova/proximanova_blackit.otf';
+  static const String proximaNovaProximanovaBold =
+      'assets/fonts/proxima_nova/proximanova_bold.otf';
+  static const String proximaNovaProximanovaBoldit =
+      'assets/fonts/proxima_nova/proximanova_boldit.otf';
+  static const String proximaNovaProximanovaExtrabold =
+      'assets/fonts/proxima_nova/proximanova_extrabold.otf';
+  static const String proximaNovaProximanovaLight =
+      'assets/fonts/proxima_nova/proximanova_light.otf';
+  static const String proximaNovaProximanovaRegular =
+      'assets/fonts/proxima_nova/proximanova_regular.ttf';
   static const String svgsMenu1 = 'assets/svgs/menu1.svg';
   static const String svgsMenu2 = 'assets/svgs/menu2.svg';
   static const String svgsMenu3 = 'assets/svgs/menu3.svg';

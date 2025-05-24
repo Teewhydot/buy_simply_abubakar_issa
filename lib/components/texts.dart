@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 
-import '../../core/theme/colors.dart';
+import '../core/theme/colors.dart';
 
 class CustomText extends StatelessWidget {
   final String text;
@@ -17,7 +16,7 @@ class CustomText extends StatelessWidget {
     required this.text,
     this.fontSize = 16.0,
     this.color = Colors.black,
-    this.decorationColor = kPrimaryColor,
+    this.decorationColor = kContainerColor,
     this.fontWeight = FontWeight.bold,
     this.alignment = MainAxisAlignment.center,
     this.decorations = const [],
@@ -30,56 +29,13 @@ class CustomText extends StatelessWidget {
       children: [
         Text(
           text,
-          style: GoogleFonts.sen(
+          style: TextStyle(
             fontSize: fontSize.sp,
             color: color,
+            fontFamily: "ProximaNova",
             fontWeight: fontWeight,
             decoration: TextDecoration.combine([...decorations]),
             decorationColor: decorationColor,
-          ),
-        ),
-      ],
-    );
-  }
-}
-
-class CustomRichText extends StatelessWidget {
-  final String text, text2;
-  final double fontSize;
-  final Color color, text2Color;
-  final FontWeight fontWeight;
-  final MainAxisAlignment alignment;
-
-  const CustomRichText({
-    super.key,
-    required this.text,
-    required this.text2,
-    this.fontSize = 16.0,
-    this.color = kBlackColor,
-    this.text2Color = kPrimaryColor,
-    this.fontWeight = FontWeight.bold,
-    this.alignment = MainAxisAlignment.center,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: alignment,
-      children: [
-        Text(
-          text,
-          style: GoogleFonts.sen(
-            fontSize: fontSize.sp,
-            color: color,
-            fontWeight: fontWeight,
-          ),
-        ),
-        Text(
-          text2,
-          style: GoogleFonts.abel(
-            fontSize: fontSize.sp,
-            color: text2Color,
-            fontWeight: fontWeight,
           ),
         ),
       ],
@@ -98,7 +54,7 @@ class CustomWrapText extends StatelessWidget {
     super.key,
     required this.text,
     this.fontSize = 16.0,
-    this.color = kBlackColor,
+    this.color = kWhite,
     this.fontWeight = FontWeight.bold,
     this.textAlign = TextAlign.center,
     this.textOverflow,
@@ -115,7 +71,9 @@ class CustomWrapText extends StatelessWidget {
             text,
             textAlign: textAlign, // Ensures text is centered
             overflow: textOverflow,
-            style: GoogleFonts.sen(
+
+            style: TextStyle(
+              fontFamily: "ProximaNova",
               fontSize: fontSize.sp,
               color: color,
               fontWeight: fontWeight,

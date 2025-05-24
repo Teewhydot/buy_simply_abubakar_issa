@@ -7,11 +7,14 @@ class StatusWrapper extends StatelessWidget {
   final Widget child;
   final Color statusColor;
   final int statusCount;
+  final double rightPosition, topPosition;
   const StatusWrapper({
     super.key,
     required this.child,
     required this.statusColor,
     required this.statusCount,
+    this.rightPosition = -9,
+    this.topPosition = 22,
   });
 
   @override
@@ -21,13 +24,13 @@ class StatusWrapper extends StatelessWidget {
       children: [
         child,
         Positioned(
-          right: -7,
-          top: 20,
+          right: rightPosition.w,
+          top: topPosition.h,
           child: Container(
             width: 16.w,
             height: 13.w,
             decoration: BoxDecoration(
-              border: Border.all(color: kBlack, width: 1.w),
+              border: Border.all(color: kNavBarColor, width: 2.w),
               color: statusColor,
               borderRadius: BorderRadius.all(Radius.circular(15).r),
             ),

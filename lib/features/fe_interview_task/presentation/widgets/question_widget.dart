@@ -18,7 +18,7 @@ class QuestionWidget extends StatelessWidget {
         ProfileCard(),
         Positioned(
           top: 30,
-          left: 75,
+          left: 70.w,
           child: SizedBox(
             width: 0.65.sw,
             child: CustomWrapText(
@@ -54,7 +54,7 @@ class ProfileCard extends StatelessWidget {
               borderRadius: BorderRadius.all(Radius.circular(10).r),
             ),
             child: CustomText(
-              text: "Angelina , 28",
+              text: "Angelina, 28",
               fontSize: 11,
               color: kWhite,
               fontWeight: FontWeight.w700,

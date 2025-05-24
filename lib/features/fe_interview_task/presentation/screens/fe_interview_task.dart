@@ -9,6 +9,7 @@ import '../../../../components/texts.dart';
 import '../../../../generated/assets.dart';
 import '../widgets/answers_widget.dart';
 import '../widgets/custom_nav_bar.dart';
+import '../widgets/fe_container.dart';
 
 class FeInterviewTask extends StatelessWidget {
   const FeInterviewTask({super.key});
@@ -111,6 +112,7 @@ class FeInterviewTask extends StatelessWidget {
                       fontWeight: FontWeight.w400,
                       fontSize: 14,
                       color: kHeaderColor,
+                      fontStyle: FontStyle.italic,
                     ),
                     14.verticalSpace,
                     AnswersWidget(),
@@ -128,7 +130,7 @@ class FeInterviewTask extends StatelessWidget {
                               color: kWhite,
                             ),
                             CustomText(
-                              text: "See who has a similar mind",
+                              text: "See who has a similar mind.",
                               fontWeight: FontWeight.w400,
                               fontSize: 14,
                               color: kWhite,
@@ -168,6 +170,7 @@ class FeInterviewTask extends StatelessWidget {
                         ),
                       ],
                     ),
+                    7.verticalSpace,
                   ],
                 ).paddingOnly(left: 16.w, right: 16.w),
               ),

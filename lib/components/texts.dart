@@ -8,6 +8,7 @@ class CustomText extends StatelessWidget {
   final double fontSize;
   final Color color, decorationColor;
   final FontWeight fontWeight;
+  final FontStyle fontStyle;
   final MainAxisAlignment alignment;
   final List<TextDecoration> decorations;
 
@@ -20,6 +21,7 @@ class CustomText extends StatelessWidget {
     this.fontWeight = FontWeight.bold,
     this.alignment = MainAxisAlignment.center,
     this.decorations = const [],
+    this.fontStyle = FontStyle.normal,
   });
 
   @override
@@ -34,6 +36,7 @@ class CustomText extends StatelessWidget {
             color: color,
             fontFamily: "ProximaNova",
             fontWeight: fontWeight,
+            fontStyle: fontStyle,
             decoration: TextDecoration.combine([...decorations]),
             decorationColor: decorationColor,
           ),

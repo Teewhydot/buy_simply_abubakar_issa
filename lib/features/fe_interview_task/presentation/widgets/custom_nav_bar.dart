@@ -27,7 +27,13 @@ class _CustomNavBarState extends State<CustomNavBar> {
         children: [
           _buildNavItem(0, Assets.svgsMenu1, statusCount: null),
           _buildNavItem(1, Assets.svgsMenu2, statusCount: 1),
-          _buildNavItem(2, Assets.svgsMenu3, statusCount: 10),
+          _buildNavItem(
+            2,
+            Assets.svgsMenu3,
+            statusCount: 10,
+            right: -6,
+            top: 25,
+          ),
           _buildNavItem(3, Assets.svgsProfile, statusCount: null),
         ],
       ),

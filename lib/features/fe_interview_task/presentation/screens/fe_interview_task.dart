@@ -15,12 +15,12 @@ class FeInterviewTask extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      child: Stack(
+    return Scaffold(
+      backgroundColor: kBlack,
+      bottomNavigationBar: CustomNavBar(),
+      body: Stack(
         children: [
           Scaffold(
-            backgroundColor: kBlack,
-            bottomNavigationBar: CustomNavBar(),
             body: Container(
               width: 1.sw,
               height: 1.sh * 0.7,
@@ -115,6 +115,59 @@ class FeInterviewTask extends StatelessWidget {
                     14.verticalSpace,
                     AnswersWidget(),
                     11.verticalSpace,
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            CustomText(
+                              text: "Pick your option.",
+                              fontWeight: FontWeight.w400,
+                              fontSize: 14,
+                              color: kWhite,
+                            ),
+                            CustomText(
+                              text: "See who has a similar mind",
+                              fontWeight: FontWeight.w400,
+                              fontSize: 14,
+                              color: kWhite,
+                            ),
+                          ],
+                        ),
+                        Row(
+                          spacing: 6,
+                          children: [
+                            FEContainer(
+                              width: 48,
+                              height: 48,
+                              borderRadius: 48,
+                              borderColor: kAccentColor,
+                              containerColor: kBlack,
+                              isSelected: true,
+                              child: Icon(
+                                Icons.mic,
+                                size: 35,
+                                color: kAccentColor,
+                              ),
+                            ),
+                            FEContainer(
+                              width: 48,
+                              height: 48,
+                              borderRadius: 48,
+                              borderColor: kAccentColor,
+                              containerColor: kAccentColor,
+                              isSelected: true,
+                              child: Icon(
+                                Icons.arrow_forward,
+                                size: 35,
+                                color: kBlack,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                   ],
                 ).paddingOnly(left: 16.w, right: 16.w),
               ),

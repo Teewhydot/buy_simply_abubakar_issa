@@ -15,7 +15,7 @@ class QuestionWidget extends StatelessWidget {
     return Stack(
       clipBehavior: Clip.none,
       children: [
-        ProfileCard(),
+        ProfileCard().paddingOnly(left: 20),
         Positioned(
           top: 30,
           left: 70.w,

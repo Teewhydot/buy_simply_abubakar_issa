@@ -20,7 +20,7 @@ class _CustomNavBarState extends State<CustomNavBar> {
   Widget build(BuildContext context) {
     return Container(
       width: 1.sw,
-      height: 79.h,
+      height: 45.h,
       color: kNavBarColor,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,

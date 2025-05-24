@@ -71,7 +71,6 @@ class CustomWrapText extends StatelessWidget {
             text,
             textAlign: textAlign, // Ensures text is centered
             overflow: textOverflow,
-
             style: TextStyle(
               fontFamily: "ProximaNova",
               fontSize: fontSize.sp,
